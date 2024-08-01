@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmação de Presença no Evento</h1>
+        <form id="confirmationForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Celular:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}" placeholder="11999999999">
+
+            <label for="birthdate">Data de Nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <button type="submit">Confirmar Presença</button>
+        </form>
+        <div id="message" class="hidden">
+    
+            <h2>Obrigado pela confirmação <span id="userName"></span>!</h2>
+            <h2>Agora faça o PIX</h2>
+            <h2>518.916.032-72</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
